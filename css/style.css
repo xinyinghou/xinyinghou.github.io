@@ -278,7 +278,7 @@ img {
   opacity:0.3;
 }
 
-.img-container .button,.img-container  .mini-button {
+.img-container .button,.img-container  .mini-button,.img-container .large-button {
   text-align: center;
   opacity: 0;
   transition: opacity .1s ease;
@@ -301,6 +301,7 @@ img {
 	font-family: Lato-Regular;
 	letter-spacing: 0.01em;
 }
+
 .button {
   position: absolute;
   width: 200px;
@@ -313,12 +314,24 @@ img {
   border-radius: 13px;
 }
 
+.large-button {
+	position: absolute;
+	width: 200px;
+	left:160px;
+	top: 200px;
+	text-align: center;
+	opacity: 0;
+	transition: opacity .35s ease;
+	margin: 0 auto;
+	border-radius: 13px;
+  }
 
-.img-container:hover .button, .img-container:hover  .mini-button {
+
+.img-container:hover .button, .img-container:hover  .mini-button, .img-container:hover .large-button {
   opacity: 1;
 }
 
-.mini-button a, .button a {
+.mini-button a, .button a, .large-button a  {
   width: 100px;
   padding: 12px 48px;
   text-align: center;
@@ -333,7 +346,7 @@ img {
   letter-spacing: 0.em;
 }
 
-.mini-button a:hover, .button a:hover{
+.mini-button a:hover, .button a:hover, .large-button a:hover{
 	background-color: #FDF8EF;
 	color: #4a4a4a;
 }
@@ -602,6 +615,7 @@ pg_it {
 	margin-bottom: 50px;
 }
 
+
 pg_semiboldit {
 	font-family: Lato-SemiBoldItalic;
 	font-style: italic;
@@ -629,7 +643,9 @@ pg_bullet {
 	line-height: 24px;
 }
 
-
+thead,th {
+	color:#80A656
+}
 @media screen and (max-width: 600px) {
 	.grid-container div {
 		width: 100%;
